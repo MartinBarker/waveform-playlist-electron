@@ -9,8 +9,9 @@ function createWindow () {
     }
   })
 
-  win.loadFile('minimal_example.html');
-  win.loadFile('newtracks.html');
+  win.loadFile('recording_example.html');
+  //win.loadFile('minimal_example.html');
+  //win.loadFile('newtracks.html');
   win.webContents.openDevTools()
 }
 

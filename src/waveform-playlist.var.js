@@ -1729,6 +1729,7 @@ var WaveformPlaylist =
 	  }, {
 	    key: 'initRecorder',
 	    value: function initRecorder(stream) {
+			console.log('initRecorder')
 	      var _this = this;
 	
 	      this.mediaRecorder = new window.MediaRecorder(stream);

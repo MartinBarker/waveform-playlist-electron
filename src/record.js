@@ -1,6 +1,23 @@
 var userMediaStream;
 var playlist;
-var constraints = { audio: true };
+var constraints = {
+  audio: {
+    autoGainControl: false,
+    echoCancellation: false,
+    noiseSuppression: false,
+    channelCount:2,
+    //sampleSize: 24,
+    sampleRate: 44100,
+
+  }, 
+  "mandatory": {
+    "googEchoCancellation": "false",
+    "googAutoGainControl": "false",
+    "googNoiseSuppression": "false",
+    "googHighpassFilter": "false"
+  },
+  video: false
+}
 
 navigator.getUserMedia = (navigator.getUserMedia ||
   navigator.webkitGetUserMedia ||
